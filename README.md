@@ -14,7 +14,7 @@
 | -------- | -------- | ----------- |:-----:|
 | 黄色  | `-Kilin-` | 未定义（默认戳饼） | ![](https://osusig.lolico.moe/sig.php?colour=yellow&uname=-Kilin-) |
 | 深紫色   | `sobatsuyu`  | `1`（太鼓） | ![](https://osusig.lolico.moe/sig.php?colour=pink&uname=sobatsuyu&mode=1) |
-| `#EE3333`| `hvick225`  | `0`（戳饼） | ![](https://osusig.lolico.moe/sig.php?colour=hexFFAA00&uname=hvick225&mode=0) |
+| `#EE3333`| `hvick225`  | `0`（戳饼） | ![](https://osusig.lolico.moe/sig.php?colour=hexEE3333&uname=hvick225&mode=0) |
 
 
 ### 在线生成示例
