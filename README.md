@@ -28,7 +28,7 @@
 
 
 ## 部署项目需求
-这个项目需要 ImageMagick 以及 memcached 这两个 PHP 扩展
+这个项目需要 ImageMagick 以及 memcached 这两个 PHP 扩展  
 你还需要在项目根目录新建一个名字为`p`的文件夹，并在里面新建一个名为`.priv.php`的文件，然后在里面写入如下 PHP 代码：
 
     <?php
@@ -40,7 +40,7 @@
 
 
 ## 感谢
-网站图标(favicon)由皮皮 peppy 提供。模式(mode)图标是由 Flyte 设计的，你可以在[这里](https://www.pixelapse.com/flyte/projects/osu!designs/files/)查看（貌似打不开了）。 `triangles.png`以及`triangles2.png`是由原作者 Lemmmy 自制的。
+网站图标(favicon)由皮皮 peppy 提供。模式(mode)图标是由 Flyte 设计的，你可以在[这里](https://www.pixelapse.com/flyte/projects/osu!designs/files/)查看（貌似打不开了）。`triangles.png`以及`triangles2.png`是由原作者 Lemmmy 自制的。
 
 整个程序由 Lemmmy 开发。
 
