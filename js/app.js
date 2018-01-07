@@ -12,7 +12,7 @@ $(function() {
             var url = "sig.php?";
 
             url += "colour=" + colour.replace('#', "hex");
-            url += "&uname=" + encodeURIComponent(($("input[name=uname]").val() || "Lemmmy"));
+            url += "&uname=" + encodeURIComponent(($("input[name=uname]").val() || "-Kilin-"));
             if(mode > 0) url += "&mode=" + mode;
             url += (ppmode >= 0 ? "&pp=" + ppmode : "");
 
@@ -31,12 +31,10 @@ $(function() {
 
             url += ($("input[name=adv-ranked-score]").prop('checked') ? "&rankedscore" : "");
 
-            url += ($("select[name=adv-online-indicator]").val() !== '0' ? "&onlineindicator=" + $("select[name=adv-online-indicator]").val() : "");
-
             url += ($("input[name=adv-xp-bar]").prop('checked') ? "&xpbar" : "");
             url += ($("input[name=adv-xp-bar-hex]").prop('checked') ? "&xpbarhex" : "");
 
-            var fullurl = "http://lemmmy.pw/osusig/" + url;
+            var fullurl = "https://osusig.lolico.moe/" + url;
 
             $("img.preview").remove();
 
@@ -49,7 +47,7 @@ $(function() {
 
             $("#previewarea").append(newimg);
 
-            $("input[name=out]").val("[img]" + fullurl + "[/img]");
+            $("input[name=out]").val(fullurl);
         }
     }
 
