@@ -33,8 +33,8 @@
                 <li style="background-color: #e83" id="colour-orange">橙色</li>
                 <li style="background-color: #fc2" id="colour-yellow">黄色</li>
                 <li style="background-color: #ad0" id="colour-green">原谅色</li>
-                <li style="background-color: #6cf" id="colour-blue">智障色</li>
-              	<li style="background-color: #25e" id="colour-darkblue">更智障色</li>
+                <li style="background-color: #6cf" id="colour-blue">阿库娅色</li>
+              	<li style="background-color: #25e" id="colour-darkblue">深阿库娅色</li>
                 <br>
                 <li style="background-color: #86e" id="colour-purple">紫色</li>
                 <li style="background-color: #f6a" id="colour-bpink">粉色</li>
@@ -55,10 +55,10 @@
             <br><br>
             <label for="mode">Mode</label>
             <ul class="modes">
-                <li class="osu selected" id="mode-osu"><img src="img/osu.png"><span>戳饼</span></li>
-                <li class="taiko" id="mode-taiko"><img src="img/taiko.png"><span>敲鼓</span></li>
-                <li class="ctb" id="mode-ctb"><img src="img/ctb.png"><span>接水果</span></li>
-                <li class="mania" id="mode-mania"><img src="img/mania.png"><span>砸键盘</span></li>
+                <li class="osu selected" id="mode-osu"><img src="img/osu.png"><span>戳饼饼</span></li>
+                <li class="taiko" id="mode-taiko"><img src="img/taiko.png"><span>敲鼓鼓</span></li>
+                <li class="ctb" id="mode-ctb"><img src="img/ctb.png"><span>接果果</span></li>
+                <li class="mania" id="mode-mania"><img src="img/mania.png"><span>弹琴琴</span></li>
             </ul>
             <br><br>
             <label for="ppmode">PP 显示</label>
@@ -69,7 +69,7 @@
                 <li id="ppmode-2">在排名后显示</li>
             </ul>
             <br><br>
-            <input type="checkbox" name="country-rank" /> 显示你的国家排名（实验性功能）
+            <input type="checkbox" name="country-rank" /> 显示你的国家排名
         </article>
         <header>你的签名</header>
         <article style="text-align: center;">
@@ -116,7 +116,7 @@
                     <input type="checkbox" name="adv-xp-bar" /> 在底部显示经验条
 	            </span>
                 <span>
-                    <input type="checkbox" name="adv-xp-bar-hex" /> 将经验条的颜色换成你设定的颜色
+                    <input type="checkbox" name="adv-xp-bar-hex" /> 将经验条的颜色换成你选择的颜色
 	            </span>
             </div>
         </article>
