@@ -12,7 +12,7 @@
 
 | 颜色 | 用户名  | 模式      | 签名图像 |
 | -------- | -------- | ----------- |:-----:|
-| 黄色  | `-Kilin-` | 未定义（默认戳饼） | ![](https://osusig.lolico.moe/sig.php?colour=yellow&uname=-Kilin-) |
+| 黄色  | `Mashir0` | 未定义（默认戳饼） | ![](https://osusig.lolico.moe/sig.php?colour=yellow&uname=Mashir0) |
 | 深紫色   | `sobatsuyu`  | `1`（太鼓） | ![](https://osusig.lolico.moe/sig.php?colour=pink&uname=sobatsuyu&mode=1) |
 | `#EE3333`| `hvick225`  | `0`（戳饼） | ![](https://osusig.lolico.moe/sig.php?colour=hexEE3333&uname=hvick225&mode=0) |
 
@@ -21,7 +21,7 @@
 
 | URL | 签名图像 |
 | -------- | :--------: |
-| `https://osusig.lolico.moe/sig.php?colour=purple&uname=-Kilin-` | ![](https://osusig.lolico.moe/sig.php?colour=purple&uname=-Kilin-) |
+| `https://osusig.lolico.moe/sig.php?colour=purple&uname=Mashir0` | ![](https://osusig.lolico.moe/sig.php?colour=purple&uname=Mashir0) |
 | `https://osusig.lolico.moe/sig.php?colour=blue&uname=rrtyui&pp=2` | ![](https://osusig.lolico.moe/sig.php?colour=blue&uname=rrtyui&pp=2)|
 | `https://osusig.lolico.moe/sig.php?colour=yellow&uname=jhlee0133&mode=3&pp=1` |![](https://osusig.lolico.moe/sig.php?colour=yellow&uname=jhlee0133&mode=3&pp=1) |
 

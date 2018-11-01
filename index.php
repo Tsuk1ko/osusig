@@ -24,22 +24,22 @@
     <body>
         <div class="page-header">
             <span class="title">osu!next 签名生成器</span><br>
-            <span class="shameless-self-promotion">原作 by <a href="https://github.com/Lemmmy/osusig" target="_blank">Lemmmy</a> - 获取源代码请点击<a href="https://github.com/YKilin/osusig" target="_blank">这里</a> - 翻译&amp;修改 by <a href="https://lolico.moe" target="_blank">神代绮凛</a></span>
+            <span class="shameless-self-promotion">原作 by <a href="https://github.com/Lemmmy/osusig" target="_blank">Lemmmy</a> - 获取源代码请点击<a href="https://github.com/Tsuk1ko/osusig" target="_blank">这里</a> - 汉化&amp;修正 by <a href="https://lolico.moe" target="_blank">神代绮凛</a></span>
         </div>
         <header>选择一个颜色</header>
         <article>
             <ul class="colours">
                 <li style="background-color: #e33" id="colour-red">红色</li>
                 <li style="background-color: #e83" id="colour-orange">橙色</li>
-                <li style="background-color: #fc2" id="colour-yellow">黄色</li>
-                <li style="background-color: #ad0" id="colour-green">原谅色</li>
-                <li style="background-color: #6cf" id="colour-blue">阿库娅色</li>
-              	<li style="background-color: #25e" id="colour-darkblue">深阿库娅色</li>
+                <li style="background-color: #fc2" id="colour-yellow" class="selected">黄色</li>
+                <li style="background-color: #ad0" id="colour-green">草绿色</li>
+                <li style="background-color: #6cf" id="colour-blue">浅蓝色</li>
+              	<li style="background-color: #25e" id="colour-darkblue">深蓝色</li>
                 <br>
                 <li style="background-color: #86e" id="colour-purple">紫色</li>
                 <li style="background-color: #f6a" id="colour-bpink">粉色</li>
-                <li style="background-color: #b17" id="colour-pink" class="selected">深紫色</li>
-                <li style="background-color: #000" id="colour-black">Deep♂Dark♂Fantasy</li>
+                <li style="background-color: #b17" id="colour-pink">紫红色</li>
+                <li style="background-color: #000" id="colour-black">黑色</li>
                 <br>
                 <br>
                 <li style="background-color: #b17; background-repeat: no-repeat; background-position: center; text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.6)" id="colour-hex">自定义</li>
@@ -51,7 +51,7 @@
         <header>设置</header>
         <article style="text-align: center;">
             <label for="uname">游戏内名字</label>
-            <input type="text" placeholder="-Kilin-" name="uname" id="uname" />
+            <input type="text" placeholder="Mashir0" name="uname" id="uname" />
             <br><br>
             <label for="mode">Mode</label>
             <ul class="modes">
@@ -74,11 +74,11 @@
         <header>你的签名</header>
         <article style="text-align: center;">
             <div id="previewarea">
-                <img src="sig.php?colour=pink&uname=-Kilin-" class="preview lazy" width="338" height="94">
+                <img src="sig.php?colour=hexffcc22&uname=Mashir0" class="preview lazy" width="338" height="94">
             </div>
             <br>
             <label for="out">签名图片地址</label>
-            <input type="text" name="out" id="out" value="https://osusig.lolico.moe/sig.php?colour=pink&uname=-Kilin-" style="width: 100%; text-align: center" readonly />
+            <input type="text" name="out" id="out" value="https://osusig.lolico.moe/sig.php?colour=hexffcc22&uname=Mashir0" style="width: 100%; text-align: center" readonly />
             <br><br>
             <a href="#" id="regen" class="button">生成</a>
         </article>
@@ -95,9 +95,9 @@
                     <input type="checkbox" name="adv-flag-stroke" /> 为国旗添加白色的描边
                 </span>
                 <span>
-                    <input type="checkbox" name="adv-opaque-avatar" /> 为头像添加一个背景（头像含有透明部分时才有效果）
+                    <input type="checkbox" name="adv-opaque-avatar" /> 为头像添加一个背景（效果不明）
                 </span>
-               <span>
+                <span>
                     <input type="checkbox" name="adv-dark-triangles" /> 将标题背景中的三角形变暗
                 </span>
             </div>
