@@ -34,7 +34,7 @@ $(function() {
             url += ($("input[name=adv-xp-bar]").prop('checked') ? "&xpbar" : "");
             url += ($("input[name=adv-xp-bar-hex]").prop('checked') ? "&xpbarhex" : "");
 
-            var fullurl = "https://osusig.lolico.moe/" + url;
+            var fullurl = "https://osusig.lolicon.app/" + url;
 
             $("img.preview").remove();
 

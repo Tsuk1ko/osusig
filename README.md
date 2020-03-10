@@ -1,7 +1,7 @@
 # osu!next 签名生成器 v3
 这是一个用 PHP 开发的 osu!next 风格的签名生成器。这个签名的设计是基于 flyte 的。
 
-查看效果以及生成签名请点击 https://osusig.lolico.moe
+查看效果以及生成签名请点击 https://osusig.lolicon.app
 
 ## 使用方法
 签名是通过提交请求到`sig.php`生成的，作者原文此处仅仅讲解了参数，如果只是想生成签名的话直接访问上面给出的站点在线生成即可。
@@ -12,18 +12,18 @@
 
 | 颜色 | 用户名  | 模式      | 签名图像 |
 | -------- | -------- | ----------- |:-----:|
-| 黄色  | `Mashir0` | 未定义（默认戳饼） | ![](https://osusig.lolico.moe/sig.php?colour=yellow&uname=Mashir0) |
-| 深紫色   | `sobatsuyu`  | `1`（太鼓） | ![](https://osusig.lolico.moe/sig.php?colour=pink&uname=sobatsuyu&mode=1) |
-| `#EE3333`| `hvick225`  | `0`（戳饼） | ![](https://osusig.lolico.moe/sig.php?colour=hexEE3333&uname=hvick225&mode=0) |
+| 黄色  | `Mashir0` | 未定义（默认戳饼） | ![](https://osusig.lolicon.app/sig.php?colour=yellow&uname=Mashir0) |
+| 深紫色   | `sobatsuyu`  | `1`（太鼓） | ![](https://osusig.lolicon.app/sig.php?colour=pink&uname=sobatsuyu&mode=1) |
+| `#EE3333`| `hvick225`  | `0`（戳饼） | ![](https://osusig.lolicon.app/sig.php?colour=hexEE3333&uname=hvick225&mode=0) |
 
 
 ### 在线生成示例
 
 | URL | 签名图像 |
 | -------- | :--------: |
-| `https://osusig.lolico.moe/sig.php?colour=purple&uname=Mashir0` | ![](https://osusig.lolico.moe/sig.php?colour=purple&uname=Mashir0) |
-| `https://osusig.lolico.moe/sig.php?colour=blue&uname=rrtyui&pp=2` | ![](https://osusig.lolico.moe/sig.php?colour=blue&uname=rrtyui&pp=2)|
-| `https://osusig.lolico.moe/sig.php?colour=yellow&uname=jhlee0133&mode=3&pp=1` |![](https://osusig.lolico.moe/sig.php?colour=yellow&uname=jhlee0133&mode=3&pp=1) |
+| `https://osusig.lolicon.app/sig.php?colour=purple&uname=Mashir0` | ![](https://osusig.lolicon.app/sig.php?colour=purple&uname=Mashir0) |
+| `https://osusig.lolicon.app/sig.php?colour=blue&uname=rrtyui&pp=2` | ![](https://osusig.lolicon.app/sig.php?colour=blue&uname=rrtyui&pp=2)|
+| `https://osusig.lolicon.app/sig.php?colour=yellow&uname=jhlee0133&mode=3&pp=1` |![](https://osusig.lolicon.app/sig.php?colour=yellow&uname=jhlee0133&mode=3&pp=1) |
 
 
 

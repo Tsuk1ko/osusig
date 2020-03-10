@@ -55,10 +55,10 @@
             <br><br>
             <label for="mode">Mode</label>
             <ul class="modes">
-                <li class="osu selected" id="mode-osu"><img src="img/osu.png"><span>戳饼饼</span></li>
-                <li class="taiko" id="mode-taiko"><img src="img/taiko.png"><span>敲鼓鼓</span></li>
-                <li class="ctb" id="mode-ctb"><img src="img/ctb.png"><span>接果果</span></li>
-                <li class="mania" id="mode-mania"><img src="img/mania.png"><span>弹琴琴</span></li>
+                <li class="osu selected" id="mode-osu"><img src="img/osu.png"><span>戳饼</span></li>
+                <li class="taiko" id="mode-taiko"><img src="img/taiko.png"><span>敲鼓</span></li>
+                <li class="ctb" id="mode-ctb"><img src="img/ctb.png"><span>接果</span></li>
+                <li class="mania" id="mode-mania"><img src="img/mania.png"><span>弹琴</span></li>
             </ul>
             <br><br>
             <label for="ppmode">PP 显示</label>
@@ -78,7 +78,7 @@
             </div>
             <br>
             <label for="out">签名图片地址</label>
-            <input type="text" name="out" id="out" value="https://osusig.lolico.moe/sig.php?colour=hexffcc22&uname=Mashir0" style="width: 100%; text-align: center" readonly />
+            <input type="text" name="out" id="out" value="https://osusig.lolicon.app/sig.php?colour=hexffcc22&uname=Mashir0" style="width: 100%; text-align: center" readonly />
             <br><br>
             <a href="#" id="regen" class="button">生成</a>
         </article>
