@@ -156,7 +156,8 @@ class ComponentAvatar extends Component
 
 			$avatarRounding = isset($_GET['avatarrounding']) ? max((int)$_GET['avatarrounding'], 0) : $this->rounding;
 
-			$avatar->setImageAlphaChannel(Imagick::ALPHACHANNEL_SET);
+			// 不再需要
+			// $avatar->setImageAlphaChannel(Imagick::ALPHACHANNEL_SET);
 
 			$roundImage = new Imagick();
 			$roundImage->newPseudoImage($this->getWidth(), $this->getHeight(), 'canvas:transparent');
