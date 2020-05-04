@@ -19,12 +19,12 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/prefixfree.min.js"></script>
         <script src="js/spectrum.js"></script>
-        <script src="js/app.min.js"></script>
+        <script src="js/app.min.js?v=20200504"></script>
     </head>
     <body>
         <div class="page-header">
             <span class="title">osu!next 签名生成器</span><br>
-            <span class="shameless-self-promotion">原作 by <a href="https://github.com/Lemmmy/osusig" target="_blank">Lemmmy</a> - 获取源代码请点击<a href="https://github.com/Tsuk1ko/osusig" target="_blank">这里</a> - 汉化&amp;修正 by <a href="https://lolico.moe" target="_blank">神代绮凛</a></span>
+            <span class="shameless-self-promotion">原作 by <a href="https://github.com/Lemmmy/osusig" target="_blank">Lemmmy</a> - 获取源代码请点击<a href="https://github.com/Tsuk1ko/osusig" target="_blank">这里</a> - 汉化&amp;修正 by <a href="https://moe.best" target="_blank">神代绮凛</a></span>
         </div>
         <header>选择一个颜色</header>
         <article>
@@ -74,11 +74,11 @@
         <header>你的签名</header>
         <article style="text-align: center;">
             <div id="previewarea">
-                <img src="sig.php?colour=hexffcc22&uname=Mashir0" class="preview lazy" width="338" height="94">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" class="preview lazy" width="338" height="94">
             </div>
             <br>
             <label for="out">签名图片地址</label>
-            <input type="text" name="out" id="out" value="https://osusig.lolicon.app/sig.php?colour=hexffcc22&uname=Mashir0" style="width: 100%; text-align: center" readonly />
+            <input type="text" name="out" id="out" value="" style="width: 100%; text-align: center" readonly />
             <br><br>
             <a href="#" id="regen" class="button">生成</a>
         </article>

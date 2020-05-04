@@ -34,7 +34,9 @@ $(function() {
             url += ($("input[name=adv-xp-bar]").prop('checked') ? "&xpbar" : "");
             url += ($("input[name=adv-xp-bar-hex]").prop('checked') ? "&xpbarhex" : "");
 
-            var fullurl = "https://osusig.lolicon.app/" + url;
+            var paths = window.location.href.split('/');
+            paths[paths.length - 1] = url;
+            var fullurl = paths.join('/');
 
             $("img.preview").remove();
 
@@ -146,4 +148,6 @@ $(function() {
     $("input[name=adv-xp-bar]").change(function() {
         $("input[name=adv-xp-bar-hex]").prop('disabled', !$(this).is(":checked"));
     });
+
+    setTimeout(reloadSig, 0);
 });
