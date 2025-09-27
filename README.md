@@ -23,7 +23,7 @@
 | URL                                                                            |                                      签名图像                                      |
 | ------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------: |
 | `https://osusig.lolicon.app/sig.php?colour=purple&uname=Mashir0`               |        ![4](https://osusig.lolicon.app/sig.php?colour=purple&uname=Mashir0)        |
-| `https://osusig.lolicon.app/sig.php?colour=blue&uname=rrtyui&pp=2`             |       ![5](https://osusig.lolicon.app/sig.php?colour=blue&uname=rrtyui&pp=2)       |
+| `https://osusig.lolicon.app/sig.php?colour=blue&uname=mrekk&pp=2`              |       ![5](https://osusig.lolicon.app/sig.php?colour=blue&uname=mrekk&pp=2)        |
 | `https://osusig.lolicon.app/sig.php?colour=yellow&uname=jhlee0133&mode=3&pp=1` | ![6](https://osusig.lolicon.app/sig.php?colour=yellow&uname=jhlee0133&mode=3&pp=1) |
 
 ## 部署项目需求
