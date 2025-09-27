@@ -12,11 +12,11 @@
 
 ## 属性示例
 
-| 颜色      | 用户名      | 模式               |                                    签名图像                                     |
-| --------- | ----------- | ------------------ | :-----------------------------------------------------------------------------: |
-| 黄色      | `Mashir0`   | 未定义（默认戳饼） |      ![1](https://osusig.lolicon.app/sig.php?colour=yellow&uname=Mashir0)       |
-| 深紫色    | `sobatsuyu` | `1`（太鼓）        |   ![2](https://osusig.lolicon.app/sig.php?colour=pink&uname=sobatsuyu&mode=1)   |
-| `#EE3333` | `hvick225`  | `0`（戳饼）        | ![3](https://osusig.lolicon.app/sig.php?colour=hexEE3333&uname=hvick225&mode=0) |
+| 颜色      | 用户名            | 模式            |                                          签名图像                                          |
+| --------- | ----------------- | --------------- | :----------------------------------------------------------------------------------------: |
+| 黄色      | `Mashir0`         | 未定义 (osu!)   |            ![1](https://osusig.lolicon.app/sig.php?colour=yellow&uname=Mashir0)            |
+| 深紫色    | `sobatsuyu`       | `1` (osu!taiko) |        ![2](https://osusig.lolicon.app/sig.php?colour=pink&uname=sobatsuyu&mode=1)         |
+| `#EE3333` | `worst hr player` | `0` (osu!)      | ![3](https://osusig.lolicon.app/sig.php?colour=hexEE3333&uname=worst%20hr%20player&mode=0) |
 
 ### 在线生成示例
 
