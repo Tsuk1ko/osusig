@@ -2,19 +2,19 @@
     <head>
         <title>osu!next 签名生成器</title>
 
-        <link rel="stylesheet" href="css/fonts.css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:400,300" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/app.css">
 
         <link rel="icon" href="favicon.ico">
 
-        <meta charset='UTF-8'>
-        <meta name='keywords' content='osu, next, signature, generator, forum, sig'>
-        <meta name='description' content='一个 osu!next 风格的签名生成器！'>
-        <meta name='author' content='Lemmmy / JindaiKirin'>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="osu, next, signature, generator, forum, sig">
+        <meta name="description" content="一个 osu!next 风格的签名生成器！">
+        <meta name="author" content="Lemmmy / JindaiKirin">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#bb1177">
-        <meta name='handheldfriendly' content='true'>
-        <meta name='mobileoptimized' content='480'>
+        <meta name="handheldfriendly" content="true">
+        <meta name="mobileoptimized" content="480">
 
         <script src="js/jquery.min.js"></script>
         <script src="js/prefixfree.min.js"></script>
