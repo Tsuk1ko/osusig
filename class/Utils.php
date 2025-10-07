@@ -26,7 +26,7 @@ class Utils
 	public static function getMemcache() {
 		if (!isset(self::$mc)) {
 			self::$mc = new Memcached();
-			self::$mc->addServer("localhost", 11211);
+			self::$mc->addServer(getenv('OSUSIG_MEMCACHED_HOST') ?? 'localhost', 11211);
 		}
 
 		return self::$mc;

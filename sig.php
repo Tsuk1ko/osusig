@@ -5,7 +5,11 @@
 // 防止 ImageMagick 输出 deprecated 警告
 error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
 
-require_once("p/.priv.php");
+if (file_exists("p/.priv.php")) {
+	require_once("p/.priv.php");
+} else {
+	define("AKEY", getenv("OSUSIG_API_KEY"));
+}
 
 function autoload($class_name) {
 	$directory = 'class/';

@@ -15,3 +15,9 @@ oldstuff/
 .sass-cache/
 .htaccess
 .user.ini
+scss/
+Dockerfile
+.dockerignore
+docker-compose.yml
+README.md
+LICENSE

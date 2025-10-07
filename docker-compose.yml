@@ -1,0 +1,31 @@
+version: '3'
+
+networks:
+  osusig:
+    external: false
+
+services:
+  osusig:
+    image: tsuk1ko/osusig:latest
+    environment:
+      OSUSIG_MEMCACHED_HOST: memcached
+      OSUSIG_API_KEY: 'your-osu-api-key'
+    restart: unless-stopped
+    networks:
+      - osusig
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - '10080:80'
+    depends_on:
+      - memcached
+
+  memcached:
+    image: memcached:alpine
+    restart: unless-stopped
+    networks:
+      - osusig
+    command:
+      - --conn-limit=1024
+      - --memory-limit=64
+      - --threads=4
