@@ -87,7 +87,9 @@ class ComponentAvatar extends Component
 		$avatarURL = self::AVATAR_URL . urlencode($user['user_id']) . '_' . urlencode(time()) . '.png';
 
 		$avatar = new Imagick();
-		$cachedPicture = $this->mc->get("osusigv3_avatar_" . $user['user_id']);
+		$isOpaqueAvatar = isset($_GET['opaqueavatar']);
+		$cacheKey = "osusigv3_avatar_" . $user['user_id'] . ($isOpaqueAvatar ? '_with_bg' : '_no_bg');
+		$cachedPicture = $this->mc->get($cacheKey);
 
 		if (!isset($cachedPicture) || !$cachedPicture) {
 			$avatarBlob = @file_get_contents($avatarURL);
@@ -104,7 +106,7 @@ class ComponentAvatar extends Component
 				$avatar->readImageBlob($avatarBlob);
 				$avatar->setImageFormat('png');
 
-				if (isset($_GET['opaqueavatar'])) {
+				if ($isOpaqueAvatar) {
 					$avatarTemp = new Imagick();
 					$avatarTemp->newImage($avatar->getImageWidth(), $avatar->getImageHeight(), new ImagickPixel('#ffffff'));
 					$avatarTemp->setImageFormat('png');
@@ -117,7 +119,7 @@ class ComponentAvatar extends Component
 				$avatar->setImageFormat('png');
 			}
 
-			$this->mc->set("osusigv3_avatar_" . $user['user_id'], base64_encode($avatar->getImageBlob()), 43200);
+			$this->mc->set($cacheKey, base64_encode($avatar->getImageBlob()), 43200);
 
 			return $avatar;
 		} else {
