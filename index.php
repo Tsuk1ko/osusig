@@ -19,7 +19,7 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/prefixfree.min.js"></script>
         <script src="js/spectrum.js"></script>
-        <script src="js/app.min.js?v=20200504"></script>
+        <script src="js/app.min.js"></script>
     </head>
     <body>
         <div class="page-header">

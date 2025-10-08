@@ -34,9 +34,7 @@ $(function() {
             url += ($("input[name=adv-xp-bar]").prop('checked') ? "&xpbar" : "");
             url += ($("input[name=adv-xp-bar-hex]").prop('checked') ? "&xpbarhex" : "");
 
-            var paths = window.location.href.split('/');
-            paths[paths.length - 1] = url;
-            var fullurl = paths.join('/');
+            var fullUrl = new URL(url, window.location.href).toString();
 
             $("img.preview").remove();
 
@@ -49,7 +47,7 @@ $(function() {
 
             $("#previewarea").append(newimg);
 
-            $("input[name=out]").val(fullurl);
+            $("input[name=out]").val(fullUrl);
         }
     }
 
