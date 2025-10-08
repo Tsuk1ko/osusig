@@ -17,6 +17,7 @@ oldstuff/
 .user.ini
 scss/
 Dockerfile
+Dockerfile.*
 .dockerignore
 docker-compose.yml
 README.md
