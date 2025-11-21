@@ -75,7 +75,7 @@ class TemplateNormal extends Template
 			$signature,
 			$isCountryRank ? 325 : 287,
 			32,
-			'#' . number_format($userRank) . ($isCountryRank ? " (" . '#' . number_format($userCountryRank) . ')' : ""),
+			'#' . (is_numeric($userRank) ? number_format($userRank) : $userRank) . ($isCountryRank ? " (" . '#' . (is_numeric($userCountryRank) ? number_format($userCountryRank) : $userCountryRank) . ')' : ""),
 			ComponentLabel::FONT_REGULAR,
 			$headerTextColour,
 			$isCountryRank ? 12 : 14,
