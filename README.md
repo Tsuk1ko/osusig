@@ -32,9 +32,9 @@
 
 ## 部署
 
-首先到这里申请一个 api key
+首先到这里申请一个“旧版本 API”
 
-https://osu.ppy.sh/p/api
+https://osu.ppy.sh/home/account/edit
 
 ### Docker
 
@@ -42,9 +42,19 @@ https://osu.ppy.sh/p/api
 mkdir osusig
 cd osusig
 wget https://github.com/Tsuk1ko/osusig/raw/refs/heads/master/docker-compose.yml
-# 自行修改 docker-compose 配置：
-# 环境变量 OSUSIG_API_KEY
-# 映射端口号
+touch .env
+```
+
+自行编辑 .env 文件写入环境变量
+
+```
+PORT=3000
+OSUSIG_API_KEY=你的API_KEY
+```
+
+然后启动
+
+```bash
 docker compose up -d
 ```
 

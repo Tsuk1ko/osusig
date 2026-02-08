@@ -9,12 +9,12 @@ services:
     image: tsuk1ko/osusig:latest
     environment:
       OSUSIG_MEMCACHED_HOST: memcached
-      OSUSIG_API_KEY: 'your-osu-api-key'
+      OSUSIG_API_KEY: ${OSUSIG_API_KEY:?必须设置 OSUSIG_API_KEY 环境变量}
     restart: unless-stopped
     networks:
       - osusig
     ports:
-      - '3000:80'
+      - '${PORT:-3000}:80'
     depends_on:
       - memcached
 
