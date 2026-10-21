@@ -56,8 +56,8 @@ class ComponentImage extends Component
 	 */
 	public function __construct(
 		OsuSignature $signature,
-		$x = 0,
-		$y = 0,
+		$x,
+		$y,
 		$image,
 		$composite = Imagick::COMPOSITE_DEFAULT,
 		$width = -1,

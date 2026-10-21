@@ -47,7 +47,10 @@ class OsuAPI
 	 */
 	public function getUserForMode($username, $mode = 0)
 	{
-		if ($mode < 4) {
+		$mode = filter_var($mode, FILTER_VALIDATE_INT);
+		if ($mode !== false && $mode >= 0 && $mode < 4) {
+			if (!is_string($username) || $username === '') return false;
+
 			$user = $this->mc->get("osusigv3_user_" . $mode . "_" . strtolower($username));
 
 			if (!$user) {
@@ -97,7 +100,7 @@ class OsuAPI
 	 */
 	protected function decode($content)
 	{
-		if (strlen($content) > 0 && $content) {
+		if (is_string($content) && $content !== '') {
 			return json_decode($content, true);
 		}
 

@@ -62,12 +62,13 @@ docker compose up -d
 
 需求：
 
-- php 7.4
+- PHP 8.3
+  - gd 扩展（启用 FreeType）
   - imagick 扩展
   - memcached 扩展
+  - curl 扩展
+  - 启用 `allow_url_fopen`
 - memcached
-
-如果你使用的 PHP 版本在 7.2 以下并且部署完发现有问题无法正常使用，请尝试使用`under-php-72`分支
 
 新建一个 `p/.priv.php` 文件，写入如下 PHP 代码：
 

@@ -94,15 +94,10 @@ class ComponentAvatar extends Component
 		if (!isset($cachedPicture) || !$cachedPicture) {
 			$avatarBlob = @file_get_contents($avatarURL);
 
-			if ($avatarBlob === false) {
-				$avatar->newImage(128, 128, new ImagickPixel("#f8f8f8"));
-				$avatar->setImageFormat('png');
-			}
-
 			$matches = array();
-			preg_match('#HTTP/\d+\.\d+ (\d+)#', $http_response_header[0], $matches);
+			preg_match('#HTTP/\d+\.\d+ (\d+)#', $http_response_header[0] ?? '', $matches);
 
-			if ($matches[1] == 200) {
+			if ($avatarBlob !== false && ($matches[1] ?? '') === '200') {
 				$avatar->readImageBlob($avatarBlob);
 				$avatar->setImageFormat('png');
 
@@ -189,8 +184,8 @@ class ComponentAvatar extends Component
 			$signature->getCanvas()->compositeImage(
 				$avatar,
 				Imagick::COMPOSITE_DEFAULT,
-				$this->x + $avatarXOffset,
-				$this->y + $avatarYOffset
+				(int)($this->x + $avatarXOffset),
+				(int)($this->y + $avatarYOffset)
 			);
 		}
 	}

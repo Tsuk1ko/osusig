@@ -118,7 +118,7 @@ class Template
 			if ($component->x + $component->getWidth() > $x2) $x2 = $component->x + $component->getWidth();
 		}
 
-		return $x2 - $x1 + $this->extraWidth;
+		return (int)($x2 - $x1 + $this->extraWidth);
 
 		//return 330;
 	}
@@ -141,7 +141,7 @@ class Template
 			if ($component->y + $component->getHeight() > $y2) $y2 = $component->y + $component->getHeight();
 		}
 
-		return $y2 - $y1 + $this->extraHeight;
+		return (int)($y2 - $y1 + $this->extraHeight);
 
 		//return 86;
 	}

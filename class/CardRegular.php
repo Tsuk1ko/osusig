@@ -104,7 +104,7 @@ class CardRegular extends Card
 		$originalTriangles = new Imagick(self::IMG_TRIANGLES);
 		$originalTriangles->cropImage(
 			$this->baseWidth, $this->baseHeight,
-			$this->baseWidth / 2, $this->baseHeight / 2);
+			(int)($this->baseWidth / 2), (int)($this->baseHeight / 2));
 
 		$triangles = new Imagick();
 		$triangles->newImage(

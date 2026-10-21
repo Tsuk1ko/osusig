@@ -88,7 +88,7 @@ class ComponentXPBar extends Component
 
 		// Main bar
 
-		$level = $signature->getUser()['level'];
+		$level = $signature->getUser()['level'] ?? 0;
 		$xp = $level - floor($level);
 
 		$draw = new ImagickDraw();

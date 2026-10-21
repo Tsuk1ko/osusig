@@ -18,7 +18,7 @@ class Signature
 	 * @param int $height The signature's canvas height
 	 */
 	public function __construct($width, $height) {
-		$this->canvas = new\Imagick();
+		$this->canvas = new Imagick();
 		$this->canvas->newImage($width, $height, new ImagickPixel('transparent'));
 	}
 

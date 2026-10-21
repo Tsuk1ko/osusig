@@ -26,7 +26,7 @@ class Utils
 	public static function getMemcache() {
 		if (!isset(self::$mc)) {
 			self::$mc = new Memcached();
-			self::$mc->addServer(getenv('OSUSIG_MEMCACHED_HOST') ?? 'localhost', 11211);
+			self::$mc->addServer(getenv('OSUSIG_MEMCACHED_HOST') ?: 'localhost', 11211);
 		}
 
 		return self::$mc;
@@ -39,6 +39,10 @@ class Utils
 		$n_array = explode(',', $n_number_format);
 		$n_parts = array('k', 'M', 'B', 'T');
 		$n_count_parts = count($n_array) - 1;
+
+		if ($n_count_parts === 0 || $n_count_parts > count($n_parts)) {
+			return $n_number_format;
+		}
 
 		$n_display = $n_array[0] . ((int) $n_array[1][0] !== 0 ? '.' . $n_array[1][0] : '');
 		$n_display .= $n_parts[$n_count_parts - 1];
@@ -61,9 +65,10 @@ class Utils
 			$response = json_decode(curl_exec($ch));
 			curl_close($ch);
 
-			self::$mc->set("osusig_v3_online_" . $username, $response->online, 60);
+			$online = $response->online ?? false;
+			self::$mc->set("osusig_v3_online_" . $username, $online, 60);
 
-			return $response->online;
+			return $online;
 		} else {
 			return $onlineStatus;
 		}

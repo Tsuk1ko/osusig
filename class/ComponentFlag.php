@@ -110,7 +110,7 @@ class ComponentFlag extends Component
 			);
 
 			if (isset($_GET['flagshadow'])) {
-				$shadow = $flag->clone();
+				$shadow = clone $flag;
 				$shadow->setImageBackgroundColor(new ImagickPixel('black'));
 
 				$shadow->shadowImage(50, 3, 0, 0);

@@ -111,8 +111,8 @@ class ComponentLabel extends Component
 	 */
 	public function __construct(
 		OsuSignature $signature,
-		$x = 0,
-		$y = 0,
+		$x,
+		$y,
 		$text,
 		$font = self::FONT_REGULAR,
 		$colour = '#555555',

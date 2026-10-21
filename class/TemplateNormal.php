@@ -21,12 +21,12 @@ class TemplateNormal extends Template
 		$isCountryRank = isset($_GET['countryrank']);
 		$removeAvatarMargin = isset($_GET['removeavmargin']);
 		$showPP = isset($_GET['pp']);
-		$pp = $showPP ? $_GET['pp'] : -1;
+		$pp = $showPP ? ($_GET['pp'] === '' ? 0 : filter_var($_GET['pp'], FILTER_VALIDATE_INT)) : -1;
 		$darkHeader = isset($_GET['darkheader']);
 		$showRankedScore = isset($_GET['rankedscore']);
 		$showXPBar = isset($_GET['xpbar']);
 
-		if ($showPP && ($pp < 0 || $pp > 3)) {
+		if ($showPP && ($pp === false || $pp < 0 || $pp > 3)) {
 			$errorImage = new ErrorImage();
 			$errorImage->generate("Invalid parameter", "Parameter 'pp' has an\ninvalid value");
 		}
@@ -35,7 +35,7 @@ class TemplateNormal extends Template
 		$userRank = $userRank ? $userRank : '?';
 		$userCountryRank = $user['pp_country_rank'];
 		$userCountryRank = $userCountryRank ? $userCountryRank : '?';
-		$mode = isset($_GET['mode']) ? $_GET['mode'] : 'osu';
+		$mode = $_GET['mode'] ?? 0;
 		$iconmode = 0;
 		switch ($mode) {
 			case 0:
@@ -56,10 +56,10 @@ class TemplateNormal extends Template
 				break;
 		}
 		$username = $user['username'];
-		$ppText = $user['pp_raw'];
-		$accuracy = $user['accuracy'];
-		$playcount = $user['playcount'];
-		$level = $user['level'];
+		$ppText = $user['pp_raw'] ?? 0;
+		$accuracy = $user['accuracy'] ?? 0;
+		$playcount = $user['playcount'] ?? 0;
+		$level = $user['level'] ?? 0;
 
 		$headerTextColour = $darkHeader ? '#555555' : '#FFFFFF';
 
@@ -168,7 +168,7 @@ class TemplateNormal extends Template
 			$signature,
 			325,
 			73,
-			$showRankedScore ? Utils::largeNumberFormat($user['ranked_score']) : $playCountText,
+			$showRankedScore ? Utils::largeNumberFormat($user['ranked_score'] ?? 0) : $playCountText,
 			ComponentLabel::FONT_BOLD,
 			'#555555',
 			14,

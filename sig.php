@@ -23,9 +23,16 @@ function autoload($class_name) {
 // PHP 7.2 起需要使用这种方式，而不是 __autoload
 spl_autoload_register('autoload');
 
+foreach ($_GET as $value) {
+	if (!is_string($value)) {
+		$errorImage = new ErrorImage();
+		$errorImage->generate("Invalid parameter", "Signature parameters must be strings.");
+	}
+}
+
 $api = new OsuAPI(constant("AKEY"));
 
-$user = $api->getUserForMode($_GET['uname'], isset($_GET['mode']) ? $_GET['mode'] : 0);
+$user = $api->getUserForMode($_GET['uname'] ?? '', $_GET['mode'] ?? 0);
 
 if (!$user) {
 	$errorImage = new ErrorImage();

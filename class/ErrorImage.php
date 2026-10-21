@@ -17,7 +17,7 @@ class ErrorImage
 	 * Initializes an error image.
 	 */
 	public function __construct() {
-		$this->canvas = new\Imagick();
+		$this->canvas = new Imagick();
 	}
 
 	/**
@@ -39,8 +39,8 @@ class ErrorImage
 		$textMetrics = $this->canvas->queryFontMetrics($draw, $errorText);
 
 		$this->canvas->newImage(
-			max($textMetrics['textWidth'], $headingMetrics['textWidth']) + 6,
-			$textMetrics['textHeight'] + $headingMetrics['textHeight'] + 6,
+			(int)(max($textMetrics['textWidth'], $headingMetrics['textWidth']) + 6),
+			(int)($textMetrics['textHeight'] + $headingMetrics['textHeight'] + 6),
 			new ImagickPixel('white'));
 
 		$this->canvas->annotateImage($draw, 3, $headingMetrics['textHeight'] * 2, 0, $errorText);
