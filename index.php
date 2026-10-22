@@ -24,7 +24,7 @@
     <body>
         <div class="page-header">
             <span class="title">osu!next 签名生成器</span><br>
-            <span class="shameless-self-promotion">原作 by <a href="https://github.com/Lemmmy/osusig" target="_blank">Lemmmy</a> - 获取源代码请点击<a href="https://github.com/Tsuk1ko/osusig" target="_blank">这里</a> - 汉化&amp;修正 by <a href="https://moe.best" target="_blank">神代绮凛</a></span>
+            <span class="shameless-self-promotion">原作 by <a href="https://github.com/Lemmmy/osusig" target="_blank">Lemmmy</a> - 获取源代码请点击<a href="https://github.com/Tsuk1ko/osusig" target="_blank">这里</a> - 汉化&amp;修正 by <a href="https://github.com/Tsuk1ko" target="_blank">神代绮凛</a></span>
         </div>
         <header>选择一个颜色</header>
         <article>
