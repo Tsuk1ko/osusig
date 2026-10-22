@@ -119,7 +119,7 @@ class CardRegular extends Card
 			$this->baseWidth - (self::SIG_STROKE_WIDTH * 2) - 2,
 			self::TRIANGLE_STRIP_HEIGHT + self::SIG_STROKE_WIDTH,
 			'gradient:' . 'none' . '-' . $hexColour);
-		$trianglesGradient1->setImageOpacity(0.6);
+		$trianglesGradient1->setImageAlpha(0.6);
 
 		// The second gradient to draw over the triangles
 		$trianglesGradient2 = new Imagick();
@@ -135,7 +135,7 @@ class CardRegular extends Card
 			0,
 			0);
 
-		$triangles->setImageOpacity($darkTriangles ? 0.2 : 0.1);
+		$triangles->setImageAlpha($darkTriangles ? 0.2 : 0.1);
 
 		// Composite the triangles onto the base
 		$this->canvas->compositeImage(
