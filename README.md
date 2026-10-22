@@ -1,7 +1,7 @@
 # osu!next 签名生成器 v3
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/tsuk1ko/osusig?style=flat-square)](https://hub.docker.com/r/tsuk1ko/osusig)
-[![Docker Image Version](https://img.shields.io/docker/v/tsuk1ko/osusig?style=flat-square&sort=semver)](https://hub.docker.com/r/tsuk1ko/osusig)
+[![Docker Image Version](https://img.shields.io/docker/v/tsuk1ko/osusig/latest?style=flat-square&sort=semver)](https://hub.docker.com/r/tsuk1ko/osusig)
 [![Docker Image Size](https://img.shields.io/docker/image-size/tsuk1ko/osusig/latest?style=flat-square)](https://hub.docker.com/r/tsuk1ko/osusig)
 
 这是一个用 PHP 开发的 osu!next 风格的签名生成器。这个签名的设计是基于 flyte 的。
